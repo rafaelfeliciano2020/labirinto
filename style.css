@@ -1,0 +1,111 @@
+body{background-color: #000;}
+
+
+/*caixa Principal do jogo*/
+#idmain{ 
+     position: relative;       
+     width: 700px;
+     height: 550px;
+     margin: auto;   
+     border: solid 4px #FFF;
+     border-radius: 0.5rem;
+     /* background-color: rgba(238, 231, 220, 0.158);     */
+     box-sizing: border-box; /*Não altera o tamanho do box, mesmo com borda ou padding*/
+}
+
+/* caixa do labirinto */
+#idBoxLabirinto{
+     position: absolute;
+     width: 630px;
+     height: 455px;
+     bottom: 10px;
+     left: 35px;
+     border: solid 4px rgb(230, 226, 17);
+     background-color: rgba(184, 135, 11, 0.11);
+     box-shadow: 10px 5px 5px rgb(58, 56, 56); /*sombra*/
+     box-sizing: border-box; /*Não altera o tamanho do box, mesmo com borda ou padding*/
+}
+
+/* caixa mensagem vencedor */
+#idBoxVencedor{
+     position: absolute;
+     width: 400px;
+     height: 60px;
+     top: 10px;
+     left: 20px; 
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 30px;
+     color: rgb(230, 226, 17);
+     /* border: solid 4px rgb(230, 18, 18); */ */
+
+     /* background-color: rgba(102, 255, 0, 0.151); */
+     box-sizing: border-box; /*Não altera o tamanho do box, mesmo com borda ou padding*/
+}
+
+/* Botao reset */
+#idReset {
+     position: absolute;
+     right: 10px;
+     top: 10px;
+     font-family: Arial, Helvetica, sans-serif
+     border-radius: 10px;
+     width: 150px;
+     font-size: 1.5rem;
+     box-shadow: 10px 5px 5px rgb(58, 56, 56); /*sombra*/
+     color: rgb(255, 255, 255);
+     background-color: #103342;
+     border-radius: 10px;
+     box-sizing: border-box;
+     
+}
+
+
+
+/* Desnho Labirinto============================================================ */
+:root {
+     --tamanhoCelula: 30px;
+   }
+
+
+ /* #linha0, #linha1 , #linha2, #linha3, #linha4, #linha5, #linha6, #linha7, #linha8, #linha9, #linha10, #linha11, #linha12, #linha13, #linha14, #linha15{ */
+.linhas{     
+     display: flex;
+     
+}
+
+.parede{
+    width: var(--tamanhoCelula);
+    height: var(--tamanhoCelula);
+    background-color: rgba(235, 5, 5, 0.233)
+}
+
+.caminho{
+     width: var(--tamanhoCelula);
+     height: var(--tamanhoCelula);
+     /* background-color: rgb(206, 20, 20); */
+
+}
+
+.saida{
+     width: var(--tamanhoCelula);
+     height: var(--tamanhoCelula);
+     background-color: rgb(20, 206, 66);
+
+}
+
+.jogador{
+     width: var(--tamanhoCelula);
+     height: var(--tamanhoCelula);
+     border-radius: 50%;
+     background-color: rgb(255, 2, 129);
+     
+
+}
+/* 
+#box { 
+     width: 100px; 
+     height: 100px;  
+     position: absolute; 
+     background: gray;  
+     left: 000px; 
+     top: 000px; } */
